@@ -134,6 +134,7 @@ include_directories(
 ## Declare a C++ executable
 add_executable(log_scan_data src/log_scan_data.cpp)
 add_executable(send_transform src/send_transform.cpp)
+add_executable(log_scan_data_manual_transform src/log_scan_data_manual_transform.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
@@ -142,6 +143,7 @@ add_executable(send_transform src/send_transform.cpp)
 ## Specify libraries to link a library or executable target against
 target_link_libraries(log_scan_data ${catkin_LIBRARIES})
 target_link_libraries(send_transform ${catkin_LIBRARIES})
+target_link_libraries(log_scan_data_manual_transform ${catkin_LIBRARIES})
 
 #############
 ## Install ##
